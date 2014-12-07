@@ -1,0 +1,4 @@
+baseproject
+===========
+
+A basic project
