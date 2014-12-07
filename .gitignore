@@ -1,0 +1,10 @@
+# Global
+.sass-cache
+npm-debug.log
+node_modules/
+
+# Html dev version
+html-dev/bower/
+html-dev/dist/
+html-dev/assets/images/temp/
+html-dev/dist

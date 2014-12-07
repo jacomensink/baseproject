@@ -1,0 +1,11 @@
+.valid-message, .error-color{
+	color:white;
+	padding:$half-gutter-width;
+
+	&.error-message{
+		background-color:$error-color;
+	}
+	&.valid-message{
+		background-color:$valid-color;
+	}
+}

@@ -1,0 +1,55 @@
+//Basic classes / no modules/ ui elements!
+html,body{
+	height:100%;
+}
+body{
+	@extend %basefont;
+	
+	background-color:$body-bg-color;
+}
+.center{
+	text-align:center;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.full-width{
+	@extend %full-width;
+}
+.clear{
+	clear:both;
+}
+.clear-left{
+	clear:left;
+}
+.clear-right{
+	clear:right;
+}
+.no-margin{
+	margin:0;
+}
+.no-padding{
+	padding:0;
+}
+.zebra{
+	> *:nth-child(even){
+		background-color:$table-zebra-color;
+	}
+}
+.hidden{
+	opacity: 0;
+	visibility: hidden;
+}
+.rounded{
+	@extend %rounded;
+}
+::selection{
+	background-color:rgba($primary-color, .7);
+	color:white;
+}
+
+//Margin classes
+@include generateMarginClasses();

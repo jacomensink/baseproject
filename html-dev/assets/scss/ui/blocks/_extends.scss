@@ -1,0 +1,12 @@
+%content-block{
+	@extend %full-width;
+	
+	z-index:1;
+	position:relative;
+	margin-bottom:$grid-gutter-width;
+}
+
+%content-block-inner{
+	background-color:white;
+	padding:40px;
+}

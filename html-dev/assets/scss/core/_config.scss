@@ -1,0 +1,24 @@
+//Fonts
+$font-family-light:Arial, Helvetica, sans-serif;
+$font-family-regular:Arial, Helvetica, sans-serif;
+$font-family-bold:Arial, Helvetica, sans-serif;
+
+$base-font:$font-family-regular;
+$title-font:$font-family-bold;
+
+$font-extra-bold:900;
+$font-bold:600;
+$font-regular-bold:400;
+$font-regular:300;
+
+$base-url:'../assets/images/';
+$base-sprite:$base-url + 'sprites/base-sprite.png';
+
+//Transition
+$base-duration:0.3s;
+$base-curve:ease-in-out;
+$bounce-curve:cubic-bezier(0.68,-.55,.265,1.55);
+
+//Basic elements
+$base-border-radius:5px;
+$base-shadow:3px 3px 0 rgba(black, .01);

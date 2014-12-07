@@ -1,0 +1,16 @@
+{
+  "name": "Base-project",
+  "version": "0.0.1",
+  "description": "Starting project for html-dev versions",
+  "license": "MIT",
+  "authors": [
+    "Jaco Mensink"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "magnific-popup": "~0.9.9",
+    "jquery-placeholder": "~2.0.8",
+    "iCheck": "~1.0.2",
+    "bootstrap-sass": "~3.0.2"
+  }
+}

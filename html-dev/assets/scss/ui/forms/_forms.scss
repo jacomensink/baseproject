@@ -1,0 +1,88 @@
+@import 'extends';
+@import 'mixins';
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"]{
+	@include input-placeholder;
+
+	@extend %input-style;
+		
+	&:focus{
+		border-color:$primary-color;
+	}
+}
+textarea{
+	@extend %basefont;
+	@extend %input-style;
+	@extend %full-width;
+
+	min-height:125px;
+	padding:15px;
+
+	&:focus{
+		border-color:$primary-color;
+	}
+}
+
+label{
+	float:left;
+	font-family:$title-font;
+	margin-bottom: 5px;
+}
+
+ul.form-list{
+	@extend  %clean-list;
+	
+	li{
+		margin-bottom:10px;
+	}
+}
+.checkbox-replacement{
+	@extend %checkbox-radio-replacement;	
+	
+	input[type="checkbox"]{
+		@extend %checkbox-radio-replacement-input;
+	}
+	.replacement{
+		@extend %checkbox-replacement;
+	}
+	
+	&.checked{
+		.replacement{
+			@extend %checkbox-replacement-checked;
+		}
+	}
+}
+
+.radio-replacement{
+	@extend %checkbox-radio-replacement;	
+	
+	input[type="radio"]{
+		@extend %checkbox-radio-replacement-input;
+	}
+	.replacement{
+		@extend %radio-replacement;
+	}
+	
+	&.checked{
+		.replacement{
+			@extend %radio-replacement-checked;
+		}
+	}
+}
+
+.replacement-container{
+	display:table;
+	float: left;
+
+	.radio-replacement, .checkbox-replacement, label{
+		display:table-cell;
+		float:none;
+		vertical-align:middle;
+
+		&.hover{
+			> .replacement{
+				border-color:$primary-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+//Reset
+@import 'core/reset';
+
+//Grid
+@import 'grid/sass-grid';
+
+//Core
+@import 'core/colors';
+@import 'core/config';
+@import 'core/base-functions';
+@import 'core/base-mixins';
+@import 'core/base-placeholders';
+@import 'core/base-animations';
+
+//Vendor
+@import 'vendor/bootstrap-import';
+
+//Bower
+//@import '../../bower/magnific-popup/src/css/settings';
+//@import '../../bower/magnific-popup/src/css/main';
+
+//Typography
+@import 'typography/typography';
+
+//Sprites
+@import 'sprites/base-sprite';
+@import 'sprites/custom-sprite';
+
+//UI
+@import 'ui/buttons/buttons';
+@import 'ui/blocks/blocks';
+@import 'ui/messages/messages';
+@import 'ui/forms/forms';
+@import 'ui/tables/tables';
+@import 'ui/lists/list';
+@import 'ui/popup/popup';
+@import 'ui/global';
+
+//
+//Modules
+//
+
+//Menus
+@import 'modules/menus/main-menu';
+@import 'modules/menus/mobile-menu';
+@import 'modules/menus/footer-menu';
+
+//Partials
+@import 'partials/header';
+@import 'partials/footer';
+
+//Pages
+@import 'pages/home';
+
+//Global
+@import 'core/global';

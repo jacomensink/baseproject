@@ -1,0 +1,13 @@
+hr{
+	@extend %full-width;
+
+	border:1px solid $support-color;
+
+	.content-block &{
+		margin: 20px 0;
+	}
+	
+	&.small{
+		margin:15px 0;
+	}
+}

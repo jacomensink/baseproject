@@ -1,0 +1,5 @@
+%zebra-table{
+  tr:nth-child(even){
+    background-color:$table-zebra-color;
+  }
+}

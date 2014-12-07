@@ -1,0 +1,74 @@
+@import 'extends';
+@import 'fonts';
+
+//Titles
+h1, .h1, h2, .h2, h3,.h3, h4,.h4, h5,.h5{
+	@extend %titlefont;
+	
+	&.primary{
+		color:$primary-color;
+	}
+	&.secondary{
+		color:$secondary-color;
+	}
+	&.tertiary{
+		color:$tertiary-color;
+	}
+}
+
+h1, .h1{
+	font-size:50px;
+	line-height:50px;
+	margin-bottom:$grid-gutter-width;
+}
+h2, .h2{
+	font-size:31px;
+	line-height:31px;
+	margin-bottom:$grid-gutter-width;
+}
+h3, .h3{
+	font-size: 25px;
+	line-height: 25px;
+	margin-bottom:$half-gutter-width;
+}
+h4, .h4{
+	font-size:16px;
+	line-height:16px;
+	margin-bottom:$half-gutter-width;
+}
+h5, .h5{
+	font-size:15px;
+	line-height:15px;
+	margin-bottom:$half-gutter-width;
+}
+
+
+//Link
+a{
+	@include transitions(color);
+
+	color:$link-color;
+	text-decoration:none;
+	
+	&:hover{
+		color:$link-hover-color;
+		text-decoration:underline;
+	}
+}
+
+p{
+	margin-bottom:$half-gutter-width;
+	line-height:23px;
+}
+
+b{
+	font-weight:$font-bold;
+}
+
+.align-left{
+	text-align:left;
+}
+
+.align-right{
+	text-align:right;
+}

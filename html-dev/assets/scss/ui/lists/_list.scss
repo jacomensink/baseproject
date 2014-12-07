@@ -1,0 +1,43 @@
+@import 'extends';
+
+ul.styled-list{
+	@extend %zebra;
+	
+	padding:0;
+
+	li{
+		list-style:none;
+		padding:10px 0;
+		margin-top:10px;
+
+		&:first-child{
+			margin-top:0;
+		}
+	}
+}
+
+ul.clean-list{
+	@extend %clean-list;
+}
+
+ul.bullet-list{
+	padding-left:0;
+	
+	li{
+		position:relative;
+		list-style:none;
+		padding-left:15px;
+
+		&:before{
+			@extend %contab;
+			@extend %rounded;
+
+			left: 0;
+			top: 50%;
+			width: 6px;
+			height: 6px;
+			background-color:$primary-color;
+			margin-top:-3px;
+		}
+	}
+}

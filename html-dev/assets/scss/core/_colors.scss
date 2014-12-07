@@ -1,0 +1,73 @@
+/*
+*
+*
+* Primary, secondary, tertiary colors
+*
+*
+*/
+
+$primary-color:#E83E00;
+$primary-dark-color:darken($primary-color, 5%);
+$primary-hover-color:$primary-dark-color;
+
+$secondary-color:#E83E00;
+$secondary-dark-color:darken($secondary-color, 5%);
+$secondary-hover-color:$secondary-dark-color;
+
+$tertiary-color:#E83E00;
+$tertiary-dark-color:darken($tertiary-color, 5%);
+$tertiary-hover-color:$tertiary-dark-color;
+
+/*
+*
+*
+* Support colors
+*
+*
+*/
+
+$support-color:#ECECEC;
+
+$support-lightest-color:lighten($support-color, 15%);
+$support-lighter-color:#f3f3f3;
+$support-light-color:#DDDDDD;
+
+$support-dark-color:darken($support-color, 5%);
+$support-darker-color:darken($support-color, 10%);
+$support-darkest-color:darken($support-color, 15%);
+
+/*
+*
+*
+* Error / valid colors
+*
+*
+*/
+
+$valid-color:#22C05B;
+$valid-light-color:lighten($valid-color, 20%);
+$valid-dark-color:darken($valid-color, 10%);
+
+$error-color:red;
+$error-light-color:lighten($error-color, 20%);
+$error-dark-color:darken($error-color, 10%);
+
+
+/*
+*
+*
+* Base colors
+*
+*
+*/
+
+$body-bg-color:#f3f3f3;
+$text-color:#333333;
+
+$link-color:$primary-color;
+$link-hover-color:darken($primary-color, 10%);
+
+$zebra-color:#FAFAFA;
+$table-zebra-color:$zebra-color;
+
+$border-color:$support-color;

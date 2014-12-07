@@ -1,0 +1,73 @@
+@mixin generateMarginClasses(){
+  .margin-t-half{
+    margin-top:$half-gutter-width;
+  }
+  .margin-t-full{
+    margin-top:$grid-gutter-width;
+  }
+  .margin-b-half{
+    margin-bottom:$half-gutter-width;
+  }
+  .margin-b-full{
+    margin-bottom:$grid-gutter-width;
+  }
+  .margin-t-double{
+    margin-top:$double-gutter-width;
+  }
+  .margin-b-double{
+    margin-bottom:$double-gutter-width;
+  }
+}
+
+//Arrows
+@mixin arrow($direction:down, $borderOne:7px, $borderThree:10px, $color:#333333, $borderTwo:$borderOne){
+
+  @extend %contab;
+
+  width: 0; 
+  height: 0;
+
+  @if $direction == up{
+    border-left: $borderOne solid transparent;
+    border-right: $borderTwo solid transparent;
+    border-bottom: $borderThree solid $color;
+  }
+  @else if $direction == down{
+    border-left:$borderOne solid transparent;
+    border-right:$borderTwo solid transparent;
+    border-top:$borderThree solid $color;
+  }
+  @else if $direction == right{
+    border-top:$borderOne solid transparent;
+    border-bottom:$borderTwo solid transparent;
+    border-left:$borderThree solid $color;
+  }
+  @else if $direction == left{
+    border-top:$borderOne solid transparent;
+    border-bottom:$borderTwo solid transparent; 
+    border-right:$borderThree solid $color; 
+  }
+}
+
+@mixin transitions($properties){
+  $transition:null;
+
+  @for $i from 1 through length($properties) {
+    $property: nth($properties, $i);
+    
+    $duration:$base-duration;
+    $curve:$base-curve;
+
+    @if length( $property ) == 2{
+      $duration:nth($property, 2);
+      $curve:$base-curve;
+    }
+    @if length( $property ) == 3{
+      $duration:nth($property, 2);
+      $curve:nth($property, 3);
+    }
+    $transition:append( #{nth($property, 1)} #{$duration} #{$curve}, unquote($transition), comma);
+  }
+
+  transition:unquote($transition);
+}

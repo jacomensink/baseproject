@@ -1,0 +1,14 @@
+%base-button{
+	text-decoration:none;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+	text-align:center;
+	font:{
+		weight:normal;
+	}
+
+	&:hover{
+		text-decoration:none;
+	}
+}

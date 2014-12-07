@@ -1,0 +1,13 @@
+%clean-list{
+	float:left;
+	
+	.content-block &{
+		padding-left:0;
+	}
+
+	li{
+		@extend %full-width;
+		
+		list-style:none;
+	}
+}

@@ -1,0 +1,15 @@
+%basefont{
+	color:$text-color;
+	line-height:21px;
+	font:{
+		size:14px;
+		family:$base-font;
+	}
+	
+}
+%titlefont{
+	color:$text-color;
+	font:{
+		family:$title-font;
+	}
+}

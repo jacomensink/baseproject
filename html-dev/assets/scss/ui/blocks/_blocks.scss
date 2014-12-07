@@ -1,0 +1,33 @@
+@import "extends";
+
+.content-block{
+	@extend %content-block;
+	
+	.inner{
+		@extend %full-width;
+		@extend %content-block-inner;
+	}
+
+	ul{
+		padding-left:20px;
+		margin-bottom:$half-gutter-width;
+	}
+	li{
+		margin-bottom:3px;
+		list-style:disc;
+	}
+	
+	&.primary{
+		.inner{
+			background-color:$primary-color;
+			color:white;
+		}
+	}
+
+	&.secondary{
+		.inner{
+			background-color:$secondary-color;
+			color:white;
+		}
+	}
+}

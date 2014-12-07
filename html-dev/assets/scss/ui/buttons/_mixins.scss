@@ -1,0 +1,7 @@
+@mixin button-color($bg-color, $hover-bg-color:lighten($bg-color, 6%)){
+	background-color:$bg-color;
+
+	&:hover{
+		background-color:$hover-bg-color;
+	}
+}
